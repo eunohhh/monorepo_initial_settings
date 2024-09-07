@@ -4,9 +4,9 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "files": [
-    "dist"
-  ],
+  "exports": {
+    "./styles.css": "./src/styles.css"
+  },
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
