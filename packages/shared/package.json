@@ -4,10 +4,10 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "files": [
-    "dist"
-  ],
-  "main": "index.ts",
+  "exports": {
+    "./styles.css": "./src/styles.css",
+    "./components": "./src/components/index.ts"
+  },
   "license": "MIT",
   "scripts": {
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
