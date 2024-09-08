@@ -5,9 +5,10 @@
     "**/*.css"
   ],
   "exports": {
-    "./styles.css": "./src/styles.css"
+    "./styles.css": "./src/styles.css",
+    "./components": "./src/components/index.ts"
   },
-  "main": "index.ts",
+  "main": "./index.ts",
   "license": "MIT",
   "scripts": {
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
